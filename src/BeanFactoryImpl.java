@@ -4,7 +4,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class BeanFactoryImpl implements BeanFactory{
 
     private Map<String, Object> beanMap = new ConcurrentHashMap<>();
-    
+
     @Override
     public Object getBean(String beanName) {
         if(this.containsBean(beanName)){
